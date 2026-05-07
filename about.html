@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css" integrity="sha512-DzC7h7+bDlpXPDQsX/0fShhf1dLxXlHuhPBkBo/5wJWRoTU6YL7moeiNoej6q3wh5ti78C57Tu1JwTNlcgHSjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <title>Leceria Cakes</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light shadow fixed-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html" ><span  style="color: #BD7D58; font-size: 25px;font-weight: bold;  font-family: 'Lobster', cursive;">Leceria Bakes</span></a>
+  
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+          <a class="nav-link active" style="color: black;" href="home.html">Home</a>
+        </li>
+         
+         <li class="nav-item">
+          <a class="nav-link active" style="color: black;" href="pp.html">Cakes</a>
+        </li>
+        
+        </li>
+        <li class="nav-item"><a class="nav-link" style="color: black;" href="gallery.html">Our Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: black;" href="about.html">About-Us</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: black;" href="contact.html">Contact-Us</a></li>
+      </ul>
+
+      <div class="d-flex">
+        <button class="btn me-2 mb-2 mb-lg-0" type="button" style="background-color: #BD7D58; color: #F6F2E7;">
+          <a href="index.html" style="text-decoration: none; color: #F6F2E7; font-weight: bold;">Logout</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- About Us -->
+<h1 style="text-align: center; text-transform: capitalize; margin-bottom: 20px; color: #BD7D58; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 20px;">About-Us</h1>
+
+<section class="about">
+  <div class="main">
+    <img src="image/about.png" alt="About Leceria Cakes">
+    <div class="about-text">
+      <h5>Leceria Cakes</h5>
+      <p>
+        At Leceria Cakes, we specialize in crafting moments of joy through our elegant and delicious baked creations. From classic birthday cakes to custom-designed masterpieces, every slice is made with premium ingredients, love, and creativity. We aim to deliver not just cakes, but experiences that stay sweet in your memories forever. Whether it’s a birthday, wedding, baby shower, or any celebration in between, we believe every moment deserves a touch of elegance and a dash of sweetness. At Leceria, every cake tells a story — your story.
+      </p>
+      <button type="button" class="talk-btn">Let's Talk</button>
+      <button type="button" class="product-btn">Our Products</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <h1 class="text-center" style="font-family: 'Lobster', cursive;">Leceria Cakes</h1>
+  <p class="text-center">Spreading sweetness with handcrafted elegance in every bite.</p>
+  <div class="icons text-center">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-google"></i>
+    <i class="fa-brands fa-skype"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <div class="copyright text-center">
+    &copy; Copyright <strong style="font-family: 'Lobster', cursive;">Leceria Cakes</strong>. All Rights Reserved
+  </div>
+  <div class="credite text-center">
+    Designed By <a href="#"><span>Akasha Iqbal</span></a>
+  </div>
+</footer>
+
+<!-- JS for Button Redirection -->
+<script>
+  const talkBtn = document.querySelector('.talk-btn');
+  const productBtn = document.querySelector('.product-btn');
+
+  talkBtn.addEventListener('click', function () {
+    window.location.href = 'contact.html';
+  });
+
+  productBtn.addEventListener('click', function () {
+    window.location.href = 'products.html';
+  });
+</script>
+
+</body>
+</html>
